@@ -19,7 +19,7 @@ header {
 
 #content {
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 nav {
@@ -159,23 +159,24 @@ footer .social img {
 
 .home-grid {
     display: grid; 
-    grid-template-columns: 10fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card-img, .mountains {
+    width: 100%;
 }
 
 .rivers-card {
-    width: 100%;
     grid-column: 2/4;
     grid-row: 2/3;
 }
 
 .camping-card {
-    width: 100%;
     grid-column: 5/7;
     grid-row: 2/3;
 }
 
 .rapids-card {
-    width: 100%;
     grid-column: 8/10;
     grid-row: 2/3;
 }
@@ -186,7 +187,6 @@ footer .social img {
 }
 
 .mountains {
-    width: 100%;
     grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
