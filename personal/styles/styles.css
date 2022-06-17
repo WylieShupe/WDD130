@@ -9,6 +9,7 @@ body {
 .content {
     max-width: 1600px;
     margin: 0 auto;
+    background-color: rgb(230, 230, 242);
 }
 
 header {
@@ -32,6 +33,10 @@ header nav {
     justify-self: center;
     align-self: center;
     margin-top: -10px;
+}
+
+#title {
+    font-style: italic;
 }
 
 .logo {
@@ -64,6 +69,7 @@ header nav {
     grid-column: 2/5;
     grid-row: 1/3;
     width: 100%;
+    border: 5px solid rgb(117, 226, 49);
 }
 
 .team-button {
@@ -78,6 +84,112 @@ header nav {
     text-decoration: underline;
 }
 
+.quote {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.quote-border {
+    grid-column: 2/3;
+    border: 10px double rgb(117, 226, 49);
+    padding: 25px;
+}
+
+.quotePara {
+    grid-column: 2/3;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+.author {
+    grid-column: 2/3;
+    grid-row: 2;
+    text-align: right;
+}
+
+.rates-title {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.rates-title span{
+    background-color: rgb(130, 130, 242);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.rates {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5px;
+    margin-right: 5px; 
+    margin-bottom: 50px;
+}
+
+.rate1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 7px inset rgb(117, 226, 49);
+    background: linear-gradient(to bottom, rgb(110, 110, 242), rgb(160, 160, 242));
+}
+
+.rate1 h1, .rate2 h1, .rate3 h1{
+    text-align: center;
+}
+
+.rate1 img {
+    width:100%;
+    height: 50%;
+}
+
+
+/**
+.back1 {
+    background:linear-gradient(to bottom, rgb(130, 130, 242), rgb(100, 100, 242));
+    grid-column: 2/3;
+}
+**/
+
+.rate2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border: 7px inset rgb(117, 226, 49);
+    background: linear-gradient(to bottom, rgb(110, 110, 242), rgb(160, 160, 242));
+}
+
+.rate2 img {
+    width: 100%;
+    height: 50%;
+}
+
+/**
+.back2 {
+    background:linear-gradient(to bottom, rgb(130, 130, 242), rgb(150, 130, 242));
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+**/
+
+.rate3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 7px inset rgb(117, 226, 49);
+    background: linear-gradient(to bottom, rgb(110, 110, 242), rgb(160, 160, 242));
+}
+
+.rate3 img {
+    width: 100%;
+}
+
+/**
+.back3 {
+    background: linear-gradient(to bottom, rgb(130, 130, 242), rgb(100, 100, 242));
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+**/
 
 footer {
     background: linear-gradient(to bottom, rgb(130, 130, 242), rgb(100, 100, 242));
@@ -85,6 +197,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 50px;
 }
 
 footer a, footer a:hover{
